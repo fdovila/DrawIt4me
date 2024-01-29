@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "DrawIt4me", "DrawIt4me.pyproj", "{0CEF7F2E-FF9C-4327-8B0F-4F8B46558F2C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0CEF7F2E-FF9C-4327-8B0F-4F8B46558F2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0CEF7F2E-FF9C-4327-8B0F-4F8B46558F2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B8DBEC6C-B522-4FAA-81BC-D1F855C40A50}
+	EndGlobalSection
+EndGlobal
