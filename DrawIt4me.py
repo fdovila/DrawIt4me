@@ -1,3 +1,15 @@
+# 290120242136 c01725a4cfee5001
+################
+# DRAW IT FOR ME
+################
+# By F.B. Avila-Rencoret, MD. 2024,CCBYNC4.0
+# A tool for drawing wireframes in [INSERT WHATEVER APP] using a any image as input.
+# NO AI required. Just a simple image processing script that converts the image into mouse strokes.
+# THE KEY SECRET IS SWITCHING BETWEEN THE TERMINAL WINDOW AND YOUR APP USING ALT+TAB
+# The script will ask you to select the target window (via terminal UX), then capture the positions of the drawing and selection tools.
+# Then it will ask you to define the ROI (region of interest) by clicking and dragging.
+
+
 import tkinter as tk
 from tkinter import filedialog
 import pygetwindow as gw
@@ -100,11 +112,18 @@ def main():
 
         roi = (start_pos[0], start_pos[1], end_pos[0], end_pos[1])
         paths, image_shape = process_image(image_path)
+
+        # Activate the drawing tool
+        window.activate()
+        pyautogui.click(drawing_tool_pos[0], drawing_tool_pos[1])
+
+        # Start the drawing process
         convert_to_mouse_strokes(paths, image_shape, roi, window)
         print("Drawing complete.")
 
     except Exception as e:
         print(f"An error occurred: {e}")
+
 
 if __name__ == "__main__":
     main()
